@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pg5demo2.css">
+    <title>css demo2</title>
+</head>
+<body>
+    <p id="p">qwert keyboard</p>
+    <h1>css demo 2</h1>
+    <button class="bb">click here!!</button>
+    <button class="bb">click here 222</button>  
+</body>
+</html>
+
+
+
+//css-ex2.css
+body{/*element selector*/
+    background-color:-moz-linear-gradient(red,green,yellow);
+    font-family:'times new roman',times,serif;
+}
+#p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+.bb{
+    background-color: aqua;
+    color:#fff;
+    padding:10px 20px;
+    border:none;
+    border-radius:25%;
+    cursor:progress;
+}
+.bb:hover{
+    border-radius:25%;
+    background-color:black;
+}
