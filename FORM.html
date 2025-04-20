@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1 align="center"><b><u>FORM</u></b></h1>
+    <form action="submit"method="post">
+         <fieldset>
+            <legend>FORM _ELEMENTS</legend>
+            <label>Name:</label>
+            <input
+            type="text"
+            placeholder="Enter your Name"
+            required
+            /><br><br>
+            <label>Email:</label>
+            <input type="email" required placeholder="Enter your Email ID"><br><br>
+            <label for="city">City names</label>
+            <input type="text" name="city" id="city" list="cityNames" required placeholder="select the city name"><br><br>
+            <label>Ph_No</label>
+            <input type="number" placeholder="Enter your Ph Number"required><br><br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female" /><label for="female">female</label>
+            <input type="radio" id="other" name="gender" value="other" /><label for="other">female</label><br /><br />
+            <label>lang known:</label><br />
+            <label>kannada</label>
+            <input type="checkbox" name="lang">
+            <label>english</label>
+            <input type="checkbox" name="lang">
+            <label>hindi</label>
+            <input type="checkbox" name="lang">
+            <br /><br />
+            <label>file upload:</label><br>
+            <input type="file" value="file" name="file" placeholder="'upload ur file"><br><br>
+            <label>comments:</label>
+            <br />
+        <textarea
+          name="comments"
+          placeholder="Enter ur comments"
+          rows="2"
+          cols="20"
+        ></textarea><br><br>
+        <input type="submit" value="submit"> <input type="reset" value="reset">
+        </fieldset>
+    </form> 
+    <datalist id="cityNames">
+      <option value="bengaluru"></option>
+      <option value="manglore"></option>
+      <option value="mysore"></option>
+      <option value="davanagere"></option>
+      <option value="ballary"></option>
+      <option value="hubli"></option>
+      <option value="darawad"></option>
+      <option value="udupi"></option>
+</datalist>  
+</body>
+</html>
+<!-- form grp of html tag
+     form tag
+     fieldset tsg
+     legend tag
+     label tag
+     input tag
+     type->text,number,email.,tel,password,date,datetime,daaaaaaatetime-local,
+     select tag
+     textarea tag-multilne text input-
+     -->
+ <!--
+     forms=>ui to collect the user inputs 
+     attribute
+       action-server patg/url address
+       method-type of submitting the input
+       autocomplete-on-allow the form to access browser history
+                    off-do not allow
+       enctype-application/x-www-form-urlenncoded-default
+               multipart/form-data-file uploading
+               text/plain-strings
+     -->
+       <!--
+       input attribute
+         type=type pf input and ui of input
+         name-input field name
+         id-input field id(optional)/mandatory in javascript
+         value-default value of input
+         placeholder-hint for user
+         required-validate the input
+         readonly-disable the write opertion
+         minlength&maxlength-mininmum & maximum input length(string)
+        -->
+         
